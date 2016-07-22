@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+body{
+	background: #000;
+	-webkit-perspective:800px;
+	-webkit-perspective-origin:50% -95%; 
+}
+	#container{
+		width: 200px;
+		height: 200px;
+  		margin:200px auto;
+  		position:relative;
+  	/*	background: #f00;
+  		*/-webkit-transform-style:preserve-3d;
+  		-webkit-animation:cube 2s linear infinite;
+
+	}
+	.cube{
+			width: 200px;
+			height: 200px;
+              font-size: 100px;
+              position: absolute;
+              line-height: 200px;
+              text-align: center;
+              background: rgba(255,255,255,.6);
+				border:1px solid #fff;
+		  		-webkit-border-radius:10px;
+		  		/*-webkit-animation:cube 2s linear infinite;*/
+		}
+		@keyframes cube{
+			from{
+
+			}
+			to{
+				-webkit-transform:rotateY(-360deg);
+			}
+		}
+		.one{
+            -webkit-transform:rotateY(-180deg) translateZ(100px);
+		}
+		.two{
+			-webkit-transform:rotateY(-90deg) translateZ(100px);
+		}
+		.three{
+			-webkit-transform:rotateY(90deg) translateZ(100px);
+		}
+		.four{
+			-webkit-transform:rotateX(90deg) translateZ(100px);
+		}
+		.five{
+			-webkit-transform:rotateX(-90deg) translateZ(100px);
+
+		}
+		.six{
+			 -webkit-transform:translateZ(100px);
+		}
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+	<div id="container">
+		<div class="cube one">1</div>
+		<div class="cube two">2</div>
+		<div class="cube three">3</div>
+		<div class="cube four">4</div>
+		<div class="cube five">5</div>
+		<div class="cube six">6</div>
+    </div>
+	
+</body>
+</html>
